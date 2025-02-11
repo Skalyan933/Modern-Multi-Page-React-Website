@@ -1,0 +1,139 @@
+/* Navbar Styling */
+.navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#008080;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 2px;
+}
+
+/* Store Name */
+.navbar h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFD700;
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display:flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color:black;
+}
+
+/* Active Link Styling */
+.nav-links .active {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/* Auth Buttons */
+.auth-buttons .Authbtns {
+  background: linear-gradient(135deg, #0077B6, #0096C7);
+  color: white;
+  padding: 8px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.auth-buttons .Authbtns:hover {
+  background: #005f89;
+}
+
+/* 🔹 Hamburger Menu */
+.menu-icon {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* 🔹 Responsive Design */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #1A1A1A;
+    padding: 10px 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 15px;
+    display: block;
+  }
+
+  .auth-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .auth-buttons .Authbtns {
+    margin-top: 5px;
+  }
+}
+
+/* 🔹 Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background:gray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 2; /* Pushes footer to the bottom */
+}

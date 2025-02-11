@@ -1,0 +1,52 @@
+/* Centering the Page */
+.not-found-container {
+    text-align: center;
+    background-color: #f8f9fa;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+ 
+  
+  /*Error Number */
+  .not-found-container h1 {
+    font-size: 120px;
+    color:red;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /*  Message */
+  .not-found-container h2 {
+    font-size: 28px;
+    color:red;
+    margin-bottom: 10px;
+  }
+  
+  /* Description */
+  .not-found-container p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /*  Go Back Home Button */
+  .home-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #0077B6;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .home-btn:hover {
+    background: #005f89;
+  }
+  
